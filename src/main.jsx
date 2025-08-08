@@ -6,7 +6,7 @@ import './index.css' // ✅ or './style.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/novaX-Job-Portal">
+    <BrowserRouter >
       <App />
     </BrowserRouter>
   </React.StrictMode>,
