@@ -1,0 +1,19 @@
+import { Routes, Route } from "react-router-dom";
+import HeroSection from "./Herosection";
+import AboutUs from "./AboutUs";
+import GetStarted from "./pages/Getstarted";
+import Register from "./pages/Employer/Register";
+import Signin from "./pages/Employer/Signin";
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<><HeroSection /><AboutUs /></>} />
+      <Route path="/get-started" element={<GetStarted />} />
+      <Route path="/register/employer" element={<Register />} />
+      <Route path="/signin/employer" element={<Signin />} />
+    </Routes>
+  );
+}
+
+export default App;
