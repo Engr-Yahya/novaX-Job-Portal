@@ -8,10 +8,21 @@ import Signin from "./pages/Employer/Signin";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<><HeroSection /><AboutUs /></>} />
+      <Route
+        path="/"
+        element={
+          <>
+            <HeroSection />
+            <AboutUs />
+          </>
+        }
+      />
       <Route path="/get-started" element={<GetStarted />} />
       <Route path="/register/employer" element={<Register />} />
       <Route path="/signin/employer" element={<Signin />} />
+
+      {/* Agar koi route match na ho to fallback */}
+      <Route path="*" element={<h1>404 - Page Not Found</h1>} />
     </Routes>
   );
 }
