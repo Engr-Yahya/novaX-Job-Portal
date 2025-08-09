@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import HeroSection from "./Herosection";
 import AboutUs from "./AboutUs";
-import GetStarted from "./pages/Getstarted";
+import GetStarted from "./pages/GetStarted";
 import Register from "./pages/Employer/Register";
 import Signin from "./pages/Employer/Signin";
 import ForgotPass from "./pages/Employer/ForgotPass";
